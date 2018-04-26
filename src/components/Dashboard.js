@@ -7,8 +7,11 @@ class Dashboard extends React.Component{
         return(
             <main className='dashboard-contain'>
                 <Header />
-                Dashboard
-                
+                <section>
+                    <div className="table">
+
+                    </div>
+                </section>
             </main>
         );
     }

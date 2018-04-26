@@ -164,7 +164,9 @@ input {
 
 .dashboard-contain {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: #F9F6EE;
+  position: relative; }
   .dashboard-contain header {
     background: #2D2D35;
     height: 6rem;
@@ -189,3 +191,16 @@ input {
       transition: color 0.3s ease; }
       .dashboard-contain header .header-btn:hover, .dashboard-contain header .header-btn:active {
         color: #16ABE0; }
+  .dashboard-contain section {
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 6rem); }
+  .dashboard-contain .table {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative; }
