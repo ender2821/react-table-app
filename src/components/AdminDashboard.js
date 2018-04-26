@@ -1,15 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Header from './Header';
 
 class AdminDashboard extends React.Component{
     render() {
         return(
-            <div>
-                Admin Dashboard
-                <Link to="/"><button>Logout</button></Link>
+            <main className='dashboard-contain'>
+                <Header />
                 <Link to="/admin-dashboard/create"><button>Create New Data Row</button></Link>
                 <Link to="/admin-dashboard/edit"><button>Edit</button></Link>
-            </div>
+            </main>
         );
     }
 }

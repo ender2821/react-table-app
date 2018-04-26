@@ -1,13 +1,191 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 body {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%; }
 
-.app-start h1 {
-  text-align: center;
-  displaY: inline-block;
-  font-size: 3.8rem;
-  text-align: center;
-  margin-top: 20px;
-  width: 100%; }
+#main {
+  width: 100%;
+  height: 100%; }
+
+h1 {
+  font-weight: 700;
+  color: #2D2D35;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000;
+  padding: 5px 5px 5px 0;
+  width: 100%;
+  max-width: 300px;
+  height: 4rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #B4B4B4;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #B4B4B4;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #B4B4B4;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #B4B4B4;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; }
+
+.btn {
+  color: #2D2D35;
+  max-width: 300px;
+  width: 100%;
+  height: 4rem;
+  border: none;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif; }
+  .btn.main {
+    background: #93D6EE;
+    transition: background 0.2s ease;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .btn.main:hover, .btn.main:active {
+      background: #16ABE0; }
+  .btn.secondary {
+    background: none;
+    transition: background 0.2s ease; }
+    .btn.secondary:hover, .btn.secondary:active {
+      background: #A4A4A4; }
+
+.login-main {
+  width: 100%;
+  height: 100%;
+  display: flex; }
+  .login-main .login-image {
+    width: 50%;
+    height: 100%;
+    background: url(/images/login-image.jpg) center center no-repeat, #2D2D35;
+    background-size: cover; }
+  .login-main .login-content {
+    width: 50%;
+    height: 100%; }
+  .login-main img {
+    width: 100%;
+    margin-bottom: 4rem; }
+  .login-main h1 {
+    margin-bottom: 4rem; }
+  .login-main input {
+    border-bottom: 1px solid #9D833E; }
+  .login-main .border {
+    margin: 2rem;
+    border: 1px solid #9D833E;
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    position: relative; }
+  .login-main .content {
+    width: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.dashboard-contain {
+  width: 100%;
+  height: 100%; }
+  .dashboard-contain header {
+    background: #2D2D35;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative; }
+    .dashboard-contain header img {
+      height: 5rem;
+      margin: 0.5rem; }
+    .dashboard-contain header .header-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      padding: 2.25rem;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-decoration: none;
+      transition: color 0.3s ease; }
+      .dashboard-contain header .header-btn:hover, .dashboard-contain header .header-btn:active {
+        color: #16ABE0; }
