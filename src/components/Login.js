@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Route,Switch,Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 class Login extends React.Component{
     render() {
         console.log(this.props.phone);
@@ -7,6 +7,7 @@ class Login extends React.Component{
             <div>
                 Login
                 <Link to="/dashboard"><button>Login</button></Link>
+                <Link to="/admin-dashboard"><button>Admin Login</button></Link>
             </div>
             
         );
