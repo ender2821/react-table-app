@@ -65,7 +65,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-input {
+input, select {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -106,6 +106,12 @@ input {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase; }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: -2px;
+  text-overflow: ''; }
+
 .btn {
   color: #2D2D35;
   max-width: 300px;
@@ -114,6 +120,7 @@ input {
   border: none;
   letter-spacing: 2px;
   margin-bottom: 2rem;
+  font-size: 1.6rem;
   cursor: pointer;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif; }
@@ -128,7 +135,7 @@ input {
     background: none;
     transition: background 0.2s ease; }
     .btn.secondary:hover, .btn.secondary:active {
-      background: #A4A4A4; }
+      background: #d1d1d1; }
 
 .text-center {
   text-align: center !important; }
@@ -211,7 +218,8 @@ input {
       left: 0;
       width: 4rem;
       height: 4rem;
-      padding: 1rem; }
+      padding: 1rem;
+      color: #2D2D35; }
     .dashboard-contain .filter-input input {
       padding-left: 4rem; }
   .dashboard-contain .table {
@@ -223,11 +231,23 @@ input {
     padding: 2rem;
     transform: translate(-50%, -50%);
     position: relative;
-    overflow: auto; }
+    overflow: auto;
+    box-shadow: 0 0 10px #ECE7D9; }
+    .dashboard-contain .table .table-functions {
+      display: flex;
+      height: 4rem; }
+      .dashboard-contain .table .table-functions a {
+        padding: 0;
+        margin-right: 2rem; }
+      .dashboard-contain .table .table-functions input {
+        margin-bottom: 0; }
     .dashboard-contain .table table {
-      width: 100%; }
+      width: 100%;
+      margin-top: 1rem; }
     .dashboard-contain .table tr {
       border-bottom: 1px solid #ECE6D7; }
+      .dashboard-contain .table tr:first-child {
+        border-top: 1px solid #ECE6D7; }
     .dashboard-contain .table th {
       text-align: left;
       padding: 1.2rem 0 1.2rem 0;
@@ -239,3 +259,105 @@ input {
       padding: 1.2rem 0 1.2rem 0;
       text-align: left;
       font-size: 1.4rem; }
+    .dashboard-contain .table a {
+      color: #2D2D35;
+      transition: color 0.2s ease;
+      padding: 1rem;
+      cursor: pointer; }
+      .dashboard-contain .table a:hover, .dashboard-contain .table a:active {
+        color: #16ABE0; }
+    .dashboard-contain .table .delete {
+      color: #2D2D35;
+      transition: color 0.2s ease; }
+      .dashboard-contain .table .delete:hover, .dashboard-contain .table .delete:active {
+        color: #D93D7A; }
+  .dashboard-contain .content {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    background: url("/images/icon-light.svg") top right no-repeat, #fff;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    padding: 2rem;
+    transform: translate(-50%, -50%);
+    position: relative;
+    overflow: auto;
+    box-shadow: 0 0 10px #ECE7D9; }
+    .dashboard-contain .content .buttons-contain {
+      display: flex;
+      bottom: 2rem;
+      left: 2rem;
+      position: absolute;
+      height: 4rem;
+      width: 100%; }
+    .dashboard-contain .content h1 {
+      margin-bottom: 2rem; }
+    .dashboard-contain .content .form-elements {
+      display: block;
+      width: 30rem; }
+    .dashboard-contain .content ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #000;
+      font-size: 1.6rem;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      opacity: 1; }
+    .dashboard-contain .content ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #000;
+      font-size: 1.6rem;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      opacity: 1; }
+    .dashboard-contain .content :-ms-input-placeholder {
+      /* IE 10+ */
+      color: #000;
+      font-size: 1.6rem;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      opacity: 1; }
+    .dashboard-contain .content :-moz-placeholder {
+      /* Firefox 18- */
+      color: #000;
+      font-size: 1.6rem;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      opacity: 1; }
+    .dashboard-contain .content input, .dashboard-contain .content select {
+      border-bottom: 1px solid #707070; }
+    .dashboard-contain .content textarea {
+      min-width: 30rem;
+      max-width: 30rem;
+      min-height: 15rem;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid #707070;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      font-family: 'Montserrat', sans-serif; }
+    .dashboard-contain .content form {
+      position: relative; }
+    .dashboard-contain .content .carrot {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem;
+      width: 2rem;
+      height: 4rem; }
+    .dashboard-contain .content .required-button {
+      width: 30rem;
+      position: relative;
+      margin-bottom: 2rem;
+      padding: 1rem 0 1rem 0;
+      display: block;
+      height: 4rem; }
+    .dashboard-contain .content .checkbox {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 0;
+      width: 2rem;
+      height: 2rem;
+      border: 2px solid #000;
+      border-radius: 2px; }
