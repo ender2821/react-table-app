@@ -130,6 +130,9 @@ input {
     .btn.secondary:hover, .btn.secondary:active {
       background: #A4A4A4; }
 
+.text-center {
+  text-align: center !important; }
+
 .login-main {
   width: 100%;
   height: 100%;
@@ -177,30 +180,62 @@ input {
     .dashboard-contain header img {
       height: 5rem;
       margin: 0.5rem; }
-    .dashboard-contain header .header-btn {
-      position: absolute;
-      top: 0;
-      right: 0;
-      cursor: pointer;
-      padding: 2.25rem;
-      text-transform: uppercase;
-      color: #fff;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-decoration: none;
-      transition: color 0.3s ease; }
-      .dashboard-contain header .header-btn:hover, .dashboard-contain header .header-btn:active {
-        color: #16ABE0; }
+  .dashboard-contain .header-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 2.25rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: color 0.3s ease; }
+    .dashboard-contain .header-btn:hover, .dashboard-contain .header-btn:active {
+      color: #16ABE0; }
   .dashboard-contain section {
     width: 100%;
     position: relative;
     width: 100%;
     height: calc(100% - 6rem); }
+  .dashboard-contain .filter-input {
+    display: block;
+    max-width: 30rem;
+    width: 100%;
+    position: relative;
+    height: 4rem; }
+    .dashboard-contain .filter-input span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4rem;
+      height: 4rem;
+      padding: 1rem; }
+    .dashboard-contain .filter-input input {
+      padding-left: 4rem; }
   .dashboard-contain .table {
     width: calc(100% - 4rem);
     height: calc(100% - 4rem);
     background: #fff;
     top: 50%;
     left: 50%;
+    padding: 2rem;
     transform: translate(-50%, -50%);
-    position: relative; }
+    position: relative;
+    overflow: auto; }
+    .dashboard-contain .table table {
+      width: 100%; }
+    .dashboard-contain .table tr {
+      border-bottom: 1px solid #ECE6D7; }
+    .dashboard-contain .table th {
+      text-align: left;
+      padding: 1.2rem 0 1.2rem 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 1.4rem;
+      text-transform: uppercase; }
+    .dashboard-contain .table td {
+      padding: 1.2rem 0 1.2rem 0;
+      text-align: left;
+      font-size: 1.4rem; }
